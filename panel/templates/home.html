@@ -21,13 +21,13 @@
                 <div class="row layout-top-spacing">
 
                     <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
-                        <div class="widget widget-one">
+                        <div class="widget widget-two">
                             <div class="row">
                                 <div class="col">
                                     <img class="img-thumbnail" width= 140px height = auto src="{%static 'img/SetarehHotel.png' %}">
                                 </div>
                                 <div class="col-10">
-                                    <a class="weatherwidget-io" href="https://forecast7.com/en/32d6551d67/isfahan/" data-label_1="ISFAHAN" data-label_2="WEATHER" >ISFAHAN WEATHER</a>
+                                    <a class="weatherwidget-io" href="https://forecast7.com/en/32d6551d67/isfahan/" data-label_1="ISFAHAN" data-label_2="WEATHER" data-icons="Climacons Animated" data-theme="original" >ISFAHAN WEATHER</a>
                                     <script>
                                     !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
                                     </script>
@@ -39,22 +39,12 @@
                     <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
                         <div class="widget widget-one">
                             <div class="row">
+                                {% for cl in clock %}
                                 <div class="col-sm">
-                                    <h5>Iran</h5>
-                                    <iframe src="http://free.timeanddate.com/clock/i7a16cow/n246/szw110/szh110/hoc000/hbw4/cf100/hgr0/fav0/fiv0/mqc000/mqs3/mql25/mqw6/mqd96/mhc000/mhs3/mhl20/mhw6/mhd96/mmc000/mms3/mml10/mmw2/mmd96/hhw16/hmw16/hmr4/hsc000/hss3/hsl90" frameborder="0" width="110" height="110"></iframe>
+                                    <h5>{{cl.title}}</h5>
+                                    <iframe src="http://free.timeanddate.com/clock/i7adwicc/n1061/szw110/szh110/hoc000/hbw4/hfc09f/cf100/hnc07c/hwc000/facfff/fnu2/fdi76/mqcfff/mqs3/mql18/mqw4/mqd60/mhcfff/mhs4/mhl5/mhw4/mhd62/mmv0/hhcfff/hhs1/hhb10/hmcfff/hms1/hmb10/hscfff/hsw3" frameborder="0" width="110" height="110"></iframe>
                                 </div>
-                            <div class="col-sm">
-                                <h5>GMT</h5>
-                                <iframe src="http://free.timeanddate.com/clock/i7a16cow/szw110/szh110/hoc000/hbw4/cf100/hgr0/fav0/fiv0/mqc000/mqs3/mql25/mqw6/mqd96/mhc000/mhs3/mhl20/mhw6/mhd96/mmc000/mms3/mml10/mmw2/mmd96/hhw16/hmw16/hmr4/hsc000/hss3/hsl90" frameborder="0" width="110" height="110"></iframe>
-                            </div>
-                            <div class="col-sm">
-                                <h5>Shanghai</h5>
-                                <iframe src="http://free.timeanddate.com/clock/i7a16cow/n237/szw110/szh110/hoc000/hbw4/cf100/hgr0/fav0/fiv0/mqc000/mqs3/mql25/mqw6/mqd96/mhc000/mhs3/mhl20/mhw6/mhd96/mmc000/mms3/mml10/mmw2/mmd96/hhw16/hmw16/hmr4/hsc000/hss3/hsl90" frameborder="0" width="110" height="110"></iframe>
-                            </div>
-                            <div class="col-sm">
-                                <h5>Washington</h5>
-                                <iframe src="http://free.timeanddate.com/clock/i7a16cow/n234/szw110/szh110/hoc000/hbw4/cf100/hgr0/fav0/fiv0/mqc000/mqs3/mql25/mqw6/mqd96/mhc000/mhs3/mhl20/mhw6/mhd96/mmc000/mms3/mml10/mmw2/mmd96/hhw16/hmw16/hmr4/hsc000/hss3/hsl90" frameborder="0" width="110" height="110"></iframe>
-                            </div>
+                                {%endfor%}
                             </div>
                         </div>
                     </div>

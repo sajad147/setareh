@@ -83,6 +83,12 @@
     padding: 22px 18px;
     background: #fff;
 }
+
+.widget.widget-two {
+    padding: 22px 18px;
+    background: #1f567c;
+}
+
 .widget.widget-one .widget-heading h6 {
     color: #0e1726;
     margin-bottom: 41px;
