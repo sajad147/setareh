@@ -8,6 +8,20 @@
 			@Import	Mixins
 	===============================
 */
+
+@font-face {
+  font-family: 'iran';
+  src: local('iran'),
+       url('/static/fonts/iran.ttf') format("truetype");
+}
+
+.GeneratedMarquee {
+  font-family:'iran';
+  font-size:18px;
+  line-height:.3em;
+  color:#330099;
+  padding:1.5em;
+  }
 html {
   min-height: 100%; }
 
@@ -19,7 +33,7 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   letter-spacing: 0.0312rem;
-  font-family: 'Nunito', sans-serif; }
+  font-family: iran; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #3b3f5c; }

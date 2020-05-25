@@ -5,7 +5,7 @@ from .models import RoomRate , NewsSlider , Weather , Clocklist
 
 @admin.register(RoomRate)
 class showmodels(admin.ModelAdmin):
-    list_display = ('roomType', 'roomRate')
+    list_display = ('roomType', 'roomRate' , 'lang')
     search_fields = ('roomType',)
     
 @admin.register(NewsSlider)
@@ -19,3 +19,5 @@ class Weatherlist(admin.ModelAdmin):
 @admin.register(Clocklist)
 class clocktime(admin.ModelAdmin):
     list_display = ('title',)
+
+

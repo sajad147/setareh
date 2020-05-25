@@ -435,7 +435,7 @@
 */
 .widget-card-one {
     background: #fff;
-    padding: 20px 0;
+    padding: 10px 0;
     height: 100%;
 }
 .widget-card-one .widget-content .media {
@@ -450,11 +450,12 @@
     align-self: center;
 }
 .widget-card-one .widget-content .media img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 0%;
     border: 3px solid #e0e6ed;
 }
+
 .widget-card-one .widget-content .media-body {
     align-self: center;
 }
